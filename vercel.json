@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/2026-04-22-release-marketing-map.html"
+    }
+  ]
+}
