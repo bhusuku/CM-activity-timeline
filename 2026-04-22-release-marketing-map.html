@@ -177,7 +177,7 @@
 <div class="wrap">
 
   <header>
-    <div class="eyebrow">Weekly Sync · 22.04.2026</div>
+    <div class="eyebrow">Weekly Sync · 06.05.2026</div>
     <h1>План релизов, маркетинга и <span class="accent">работы с лидами</span></h1>
     <p class="subtitle">Единый план на ближайший месяц - релизы, маркетинговые активности, outreach и работа с базой клиентов. Нужен, чтобы видеть все зависимости разом и проще менять приоритеты, а маркетингу и CRM - планировать свою активность в привязке к конкретным датам релизов.</p>
     <div class="legend">
@@ -196,26 +196,26 @@
 
   <div id="view-map" class="view">
 
-  <!-- CORE RELEASE -->
+  <!-- CORE: ACTIVATION + WEB CM + ANALYTICS -->
   <section class="core-release">
-    <div class="core-meta">Ядро · релиз ~29 апреля</div>
-    <h2 class="core-title">Большой релиз: связка трёх компонентов</h2>
-    <p class="subtitle" style="margin-top: 6px; margin-bottom: 22px;">Три части нельзя релизить по отдельности - общая кодобаза и зависимости. Отсюда растут все маркетинговые и outreach-активности ниже.</p>
+    <div class="core-meta">Текущий фокус · 6-12 мая</div>
+    <h2 class="core-title">Activation Improvements · Web CM · Аналитика</h2>
+    <p class="subtitle" style="margin-top: 6px; margin-bottom: 22px;">Три параллельных фронта: чиним activation-воронку (App Boot → Login → First Project), исследовательский спринт по Web CM / Simple Mode, и наводим порядок в продуктовой аналитике перед сквозным трекингом.</p>
     <div class="core-components">
       <div class="component">
-        <div class="component-label">1. Unreal Engine</div>
-        <div class="component-name">Unreal 5.5 + 5.7</div>
-        <div class="component-owner">Owner: Вова · merge в stage 22.04</div>
+        <div class="component-label">1. Activation Improvements</div>
+        <div class="component-name">Воронка App Boot → First Project</div>
+        <div class="component-owner">Леонид · CM-1573 review + CM-1585 подпись Windows · контрольный замер 12.05</div>
       </div>
       <div class="component">
-        <div class="component-label">2. Playable Editor</div>
-        <div class="component-name">V2: canvas + chat + preview</div>
-        <div class="component-owner">Owner: Вал · доработка после мержа</div>
+        <div class="component-label">2. Web CM / Simple Mode</div>
+        <div class="component-name">Cost · Abuse · Analytics research</div>
+        <div class="component-owner">Саша Басюк · LLM cost test + HTML protection + analytics traces · CM-1596 Simple/Advanced paths (Вова)</div>
       </div>
       <div class="component">
-        <div class="component-label">3. Asset Studio</div>
-        <div class="component-name">Анимации, BG removal, Upscale</div>
-        <div class="component-owner">Owner: Саша · допил UX на выходных</div>
+        <div class="component-label">3. Аналитика</div>
+        <div class="component-name">Amplitude · глоссарий · PostHog</div>
+        <div class="component-owner">Вал · CM-1572 аудит до 09.05 + CM-1582 глоссарий до 07.05 + PostHog setup</div>
       </div>
     </div>
   </section>
@@ -233,27 +233,64 @@
       <div class="track-section">
         <div class="track-section-title">Маркетинговая коммуникация</div>
         <ul class="track-list">
-          <li>Release Notes + посты в блог <span class="meta">Саша готовит RN на выходных · Боря публикует</span></li>
-          <li>Reddit / Twitter / рекламные кампании <span class="meta">Видео + визуальный результат - CTR x6 vs статика</span></li>
-          <li>Ньюслеттер для базы <span class="meta">Синхронно с релизом, не через неделю</span></li>
+          <li>Ньюслеттер по обновлению приложения <span class="badge badge-planned">11-12.05</span><span class="meta">Антон · контент-план 1-8 мая</span></li>
+          <li>Реактивационная рассылка (8 churned · апр-май) <span class="badge badge-planned">До 09.05</span><span class="meta">Линк апдейта (Антон) + сравнение с конкурентами (Боря)</span></li>
+          <li>Ручная рассылка trial-юзерам (330 чел) <span class="badge badge-planned">09-12.05</span><span class="meta">MailChimp · уникальные ссылки · Коля</span></li>
+          <li>Посты в блог · Reddit / Twitter / реклама <span class="meta">Видео + визуальный результат - CTR x6 vs статика</span></li>
         </ul>
       </div>
 
       <div class="track-section">
         <div class="track-section-title">Видео-контент</div>
         <ul class="track-list">
-          <li>Видео Asset Studio <span class="badge badge-active">В работе</span><span class="meta">Саша · ближе к релизу, выходные</span></li>
-          <li>Видео V2 Editor (canvas + chat) <span class="meta">Уже публикует Вал как "ликс" - собрать финальное</span></li>
-          <li>Тизеры с анимациями персонажей <span class="meta">Показать динамику vs старую статику</span></li>
+          <li>Демо Playable Editor (CM-1569) <span class="badge badge-active">В работе</span><span class="meta">Антон сделал демо 06.05 → разблокирует Вала · работа с сырым материалом 07.05</span></li>
+          <li>Сырой туториал для обзорщицы <span class="badge badge-planned">07.05</span><span class="meta">После демо с Валом · несмонтированная версия</span></li>
+          <li>Tutorial - ключевые шаги создания Playable <span class="badge badge-planned">12.05</span><span class="meta">Антон · таймкоды + заставка + CTA Try Code Maestro</span></li>
+          <li>Короткие demo-ролики Unreal Engine (CM-1567) <span class="badge badge-active">До 07.05 первые 3</span><span class="meta">Вова · 5-6 штук · сложные → след. спринт</span></li>
+          <li>Видео для нарезки из демо Вала <span class="meta">Отложено до возвращения Вала · план фичей в Fathom</span></li>
+          <li>Видео Asset Studio <span class="meta">Готово · ждёт feature table для расширенной нарезки</span></li>
         </ul>
       </div>
 
       <div class="track-section">
-        <div class="track-section-title">Outreach · Apollo.io</div>
+        <div class="track-section-title">Outreach · Apollo.io / Feedback program</div>
         <ul class="track-list">
+          <li>Trial-юзеры (330 за апрель) <span class="badge badge-active">Active</span><span class="meta">Mailchimp · апдейт + feedback program в обмен на $19 кредитов</span></li>
+          <li>Power Users (11 купивших/продливших) <span class="meta">Special offer $49 за месяц в обмен на фидбэк</span></li>
+          <li>Reactivation churned (8 чел апр-май) <span class="meta">$49 кредитов + апдейт по приложению</span></li>
           <li>UA-маркетологи mobile gaming <span class="meta">Джордже / iLogos - автоматизация</span></li>
           <li>AzureGames · TripleGames · Zorka (re-engage) <span class="meta">Апдейт - повод для реактивации</span></li>
-          <li>Холодные sequences (EN) под новый UI <span class="meta">Hook = анимации + canvas</span></li>
+        </ul>
+      </div>
+
+      <div class="track-section">
+        <div class="track-section-title">Playable Analytics · фоллоуапы</div>
+        <ul class="track-list">
+          <li>15 фоллоуапов по участникам feedback программы <span class="badge badge-planned">09-12 May</span><span class="meta">Антон · по таблице · питч прототипа в обмен на отзыв</span></li>
+        </ul>
+      </div>
+
+      <div class="track-section">
+        <div class="track-section-title">Маркетинг (план Бори)</div>
+        <ul class="track-list">
+          <li>LinkedIn Ads · кампания на Demo <span class="badge badge-active">Active</span><span class="meta">Запуск этой неделей</span></li>
+          <li>Google Ads · минимальный трафик <span class="badge badge-active">Active</span><span class="meta">Запуск этой неделей</span></li>
+          <li>Vendo рассылка · новая база с пересобранными USP <span class="badge badge-planned">След. неделя</span><span class="meta">Договорились с Vendo · после релиза</span></li>
+          <li>Анонсы обновлений: посевы TG · LinkedIn · Reddit <span class="meta">Полный газ этой неделей</span></li>
+          <li>Подготовка лендинга с акцентом на Demo <span class="badge badge-planned">06-19 May</span></li>
+          <li>Новый формат отчёта для Demo · финализация <span class="meta">Фидбек получим во вторник 12.05</span></li>
+          <li>Подготовка видосов по новому функционалу <span class="meta">После Asset Studio · после Playable Editor demo</span></li>
+          <li>Переезд сайта <span class="badge badge-planned">Planned</span></li>
+        </ul>
+      </div>
+
+      <div class="track-section">
+        <div class="track-section-title">Churn Reduction (Коля)</div>
+        <ul class="track-list">
+          <li>CM-1576 Predictive churn email <span class="badge badge-active">Этот спринт</span><span class="meta">No login 30d + credits unused → письмо удержания</span></li>
+          <li>CM-1575 Параллельная отправка событий в n8n <span class="meta">Apollo / CRM sync</span></li>
+          <li>CM-1578 Низкий баланс кредитов (&lt;300) email <span class="meta">Письмо с предложением докупить + webhook</span></li>
+          <li>CM-1581 (название уточнить у Коли) <span class="meta">Четвёртая задача из Churn-блока</span></li>
         </ul>
       </div>
 
@@ -265,45 +302,45 @@
       </div>
     </div>
 
-    <!-- ENTERPRISE / CM 2.0 TRACK -->
+    <!-- WEB CM TRACK (новый акцент) -->
     <div class="track track-enterprise">
-      <h2>CM 2.0 / Enterprise <span class="badge badge-planned">Next</span></h2>
-      <div class="track-audience">ЦА: Tier-1 студии (MoonActive, MyGames), enterprise dev-команды</div>
+      <h2>Web CM / Simple Mode <span class="badge badge-active">Новый фокус</span></h2>
+      <div class="track-audience">ЦА: self-service сегмент - маркетологи в небольших командах, инди-разработчики, индусы. Без регистрации - первый результат до того, как качают приложение и платят.</div>
 
       <div class="track-section">
-        <div class="track-section-title">Продукт</div>
+        <div class="track-section-title">Research-спринт (Саша Басюк, эта неделя)</div>
         <ul class="track-list">
-          <li>CM 2.0: pipeline constructor + agent system <span class="meta">Архитектура готова · разработка продолжается · Вова возвращается после Unreal</span></li>
-          <li>Подключение Леонида к деталям CM 2.0 <span class="meta">Саша разбирает задачи к MVP на следующей неделе</span></li>
-          <li>Kanban / DevFlow Board <span class="meta">Последний приоритет, старт после Unreal-релиза</span></li>
-          <li>Реструктуризация понятия "проект" <span class="meta">Возможны задачи для Коли</span></li>
-          <li>Дата релиза CM 2.0 <span class="badge badge-blocked">TBD</span><span class="meta">На встрече не обсуждалась - уточнить у Саши / Алекса</span></li>
+          <li>LLM cost test <span class="badge badge-active">Active</span><span class="meta">Скрипт через Gemini · медиана стоимости генерации playable</span></li>
+          <li>HTML protection research <span class="badge badge-active">Active</span><span class="meta">Защита index.html от стороннего скачивания · effort + risk</span></li>
+          <li>Analytics traces (запросы юзеров) <span class="badge badge-active">Active</span><span class="meta">Трейсы для отслеживания поведения в веб-режиме</span></li>
+          <li>Ограничения вводных <span class="meta">30-сек видео + 2 скриншота для незалогиненного юзера</span></li>
         </ul>
       </div>
 
       <div class="track-section">
-        <div class="track-section-title">Sales &amp; Positioning</div>
+        <div class="track-section-title">Продукт (Вова)</div>
         <ul class="track-list">
-          <li>Алекс ведёт enterprise-продажи <span class="meta">Pitch: AI DevOps Platform, не copilot</span></li>
-          <li>Advisor Сергей (Plarium) <span class="meta">Связи + макеты top-of-funnel</span></li>
-          <li>MoonActive · MyGames - на низком старте <span class="meta">Unreal-релиз = входная точка</span></li>
+          <li>CM-1596 Simple/Advanced playable paths <span class="badge badge-planned">09.05 старт</span><span class="meta">Прототип этот спринт · релиз след. спринт</span></li>
+          <li>Развилка при создании проекта <span class="meta">Веб-flow vs приложение · подписка для advanced</span></li>
         </ul>
       </div>
 
       <div class="track-section">
-        <div class="track-section-title">Видео &amp; контент</div>
+        <div class="track-section-title">Анти-абьюз (research subtasks)</div>
         <ul class="track-list">
-          <li>Короткие видео Unreal <span class="badge badge-planned">Planned</span><span class="meta">5-6 роликов по 1.5-2 мин · референс Base44 · Антон → Jira на Вову</span></li>
-          <li>Большое видео CM 2.0 <span class="badge badge-planned">May W1</span><span class="meta">Первая неделя мая · после релиза CM 2.0</span></li>
+          <li>OpenRouter ключ с лимитом spend/день <span class="meta">Изоляция бюджета</span></li>
+          <li>Filter по IP + device ID <span class="meta">Counter 3 генерации до sign-up</span></li>
+          <li>A/B test на кнопку генерации <span class="meta">Сразу vs sign-up first (playlock)</span></li>
         </ul>
       </div>
 
       <div class="track-section">
-        <div class="track-section-title">Вебинар · идея</div>
+        <div class="track-section-title">Получение фидбэка</div>
         <ul class="track-list">
-          <li>CM 2.0 Enterprise Webinar <span class="badge badge-idea">Idea</span><span class="meta">Pipeline constructor + DevFlow Board live · для enterprise leads</span></li>
+          <li>Фидбэк по прототипу (Антон) <span class="badge badge-planned">13-19 May</span><span class="meta">После основных research-задач</span></li>
         </ul>
       </div>
+
     </div>
   </section>
 
@@ -314,31 +351,31 @@
       <div class="cust">
         <div class="cust-row">
           <div>
-            <div class="cust-label">Текущие активные (Creator plan)</div>
-            <div style="font-size: 12px; color: var(--muted)">2 новые продажи на этой неделе</div>
+            <div class="cust-label">Power Users (купившие/продлившие)</div>
+            <div style="font-size: 12px; color: var(--muted)">11 человек апр-май</div>
           </div>
-          <div class="cust-action">Персональный апдейт о V2 + Asset Studio</div>
+          <div class="cust-action">Special offer $49 + питч Playable Analytics прототипа</div>
         </div>
         <div class="cust-row testing">
           <div>
-            <div class="cust-label">В активном тестировании (WAU 17)</div>
-            <div style="font-size: 12px; color: var(--muted)">Триал + первый проект</div>
+            <div class="cust-label">Trial-юзеры (горячие лиды)</div>
+            <div style="font-size: 12px; color: var(--muted)">330 за апрель</div>
           </div>
-          <div class="cust-action">Триггерные рассылки + кейсы Asset Studio</div>
+          <div class="cust-action">Mailchimp · апдейт + feedback program · $19 кредитов</div>
         </div>
         <div class="cust-row churned">
           <div>
-            <div class="cust-label">Отписались: Zorka, Maya Games</div>
-            <div style="font-size: 12px; color: var(--muted)">25.04 · 27.04 · форма причин отписки</div>
+            <div class="cust-label">Churned (отписались апр-май)</div>
+            <div style="font-size: 12px; color: var(--muted)">8 человек · реактивационная рассылка</div>
           </div>
-          <div class="cust-action">Win-back: анимации + V2 как повод вернуться</div>
+          <div class="cust-action">$49 кредитов + апдейт по приложению + сравнение с конкурентами</div>
         </div>
         <div class="cust-row leads">
           <div>
-            <div class="cust-label">База лидов Apollo.io</div>
-            <div style="font-size: 12px; color: var(--muted)">UA-маркетологи + studios</div>
+            <div class="cust-label">Прототип Playable Analytics</div>
+            <div style="font-size: 12px; color: var(--muted)">15 фоллоуапов на 09-12 мая</div>
           </div>
-          <div class="cust-action">Новая sequence с V2 hook</div>
+          <div class="cust-action">Антон · по таблице участников feedback программы</div>
         </div>
       </div>
     </div>
@@ -347,29 +384,29 @@
       <h3>Таймлайн ближайшего месяца</h3>
       <div class="timeline">
         <div class="tl-item">
-          <div class="tl-date">Эта неделя · 22-26 апреля</div>
-          <div class="tl-title">Merge, синк по UX, доработка</div>
-          <div class="tl-desc">Вова merge · Саша + Вал по Magic Buttons · допил Asset Studio · release notes</div>
+          <div class="tl-date">Эта неделя · 6-12 мая</div>
+          <div class="tl-title">Стабилизация + аналитика + рассылки</div>
+          <div class="tl-desc">Подпись Windows (CM-1585) до 09.05 · аудит Amplitude (Вал) · глоссарий событий до 07.05 · реактивационная рассылка до 09.05 · ньюслеттер 06.05 · демо Playable Editor + туториал для обзорщицы</div>
         </div>
         <div class="tl-item">
-          <div class="tl-date">Ср 29 апреля (оптимистично)</div>
-          <div class="tl-title">Большой релиз</div>
-          <div class="tl-desc">Unreal + V2 + Asset Studio · синхронный выход маркетинг-контента</div>
+          <div class="tl-date">Пн 12 мая</div>
+          <div class="tl-title">Контрольный замер метрики</div>
+          <div class="tl-desc">App Boot → Login Screen после подписи Windows · проверка эффекта · Tutorial Playable от Антона</div>
         </div>
         <div class="tl-item">
-          <div class="tl-date">Первая неделя мая</div>
-          <div class="tl-title">Первый патч + реактивация</div>
-          <div class="tl-desc">Native Asset Studio в Editor · большое видео CM 2.0 · win-back Zorka / Maya</div>
+          <div class="tl-date">Следующая неделя · 13-19 мая</div>
+          <div class="tl-title">Web CM продвижение + обзорное видео CM 2.0</div>
+          <div class="tl-desc">Cost test + HTML protection (Саша) · Simple/Advanced playable paths релиз · Mac Installer (CM-1595) · получение фидбэка по прототипу Web CM</div>
         </div>
         <div class="tl-item v">
           <div class="tl-date">Параллельно · CM 2.0</div>
-          <div class="tl-title">Разработка CM 2.0 продолжается</div>
-          <div class="tl-desc">Вова возвращается после Unreal, Леонид подключается к деталям, разбор задач к MVP · релиз-дата TBD</div>
+          <div class="tl-title">Разработка ведёт Вова</div>
+          <div class="tl-desc">Саша Басюк сосредоточен на Web Mode и Asset Studio · возврат к CM 2.0 после стабилизации · релиз-дата TBD</div>
         </div>
         <div class="tl-item v">
-          <div class="tl-date">Середина мая</div>
-          <div class="tl-title">Enterprise push</div>
-          <div class="tl-desc">Видео CM 2.0 + outreach с Алексом по MoonActive / MyGames · возможный вебинар (идея)</div>
+          <div class="tl-date">Конец мая</div>
+          <div class="tl-title">Enterprise push + Simulation videos</div>
+          <div class="tl-desc">Outreach с Алексом по MoonActive / MyGames · Simulation use-case based videos · возможный вебинар (идея)</div>
         </div>
       </div>
     </div>
@@ -380,46 +417,53 @@
     <h3>Ответственные по фронтам</h3>
     <div class="owners-grid">
       <div class="owner">
-        <div class="owner-name">Алекс</div>
-        <div class="owner-role">CEO · Enterprise</div>
-        <div class="owner-focus">Согласование стратегии продаж CM 2.0, enterprise-продажи Tier-1, работа с advisor Сергеем</div>
-      </div>
-      <div class="owner">
-        <div class="owner-name">Саша</div>
+        <div class="owner-name">Саша Басюк</div>
         <div class="owner-role">Tech Lead</div>
-        <div class="owner-focus">Asset Studio, Release Notes, архитектура CM 2.0, общий tech roadmap</div>
+        <div class="owner-focus">Web CM / Simple Mode (LLM cost test, HTML protection, analytics traces), Asset Studio fixes, Intercom research</div>
       </div>
       <div class="owner">
         <div class="owner-name">Вал</div>
         <div class="owner-role">Technical PM</div>
-        <div class="owner-focus">V2 Playable Editor, Magic Buttons, нативная интеграция Asset Studio</div>
+        <div class="owner-focus">CM-1572 аудит Amplitude (до 09.05), CM-1582 глоссарий событий (до 07.05), CM-1569 demo Playable Ads, PostHog setup</div>
       </div>
       <div class="owner">
         <div class="owner-name">Вова</div>
         <div class="owner-role">Developer</div>
-        <div class="owner-focus">Unreal 5.5 + 5.7 merge, короткие видео с визуалом, потом CM 2.0</div>
+        <div class="owner-focus">CM-1567 demo Unreal (первые 3 до 07.05), CM-1596 Simple/Advanced paths (09.05), CM-1593 Installer Windows, CM-1570 обзорное видео CM 2.0</div>
       </div>
       <div class="owner">
         <div class="owner-name">Боря</div>
         <div class="owner-role">Marketing</div>
-        <div class="owner-focus">Синхронный маркетинг, видео-монтаж, посты, форма причин отписки</div>
+        <div class="owner-focus">Сравнение с конкурентами для рассылок (до 09.05), контент 1-8 мая, LinkedIn/Google Ads (с 04.05), Vendo рассылка, лендинг с акцентом на Demo (с 05.05), видео-монтаж</div>
       </div>
       <div class="owner">
         <div class="owner-name">Коля</div>
         <div class="owner-role">Dev · Dashboard</div>
-        <div class="owner-focus">Триггерные рассылки, Exit Survey, аналитика, admin</div>
+        <div class="owner-focus">Churn Prevention sequence (CM-1540/1541/1542 + CM-1579 + CM-1563) на 13-19 мая, реактивационная и ручная рассылки trial-юзерам, CM-1571 export по запросу</div>
       </div>
       <div class="owner">
         <div class="owner-name">Леонид</div>
         <div class="owner-role">Frontend · новый</div>
-        <div class="owner-focus">Полишинг апки, помощь по CM 2.0, админки через 1-2 недели</div>
+        <div class="owner-focus">CM-1585 Подпись Windows (до 09.05), CM-1573 review установки, CM-1595 Mac Installer (след. неделя)</div>
       </div>
       <div class="owner">
         <div class="owner-name">Антон</div>
         <div class="owner-role">Consultant</div>
-        <div class="owner-focus">Синхронизация команд, Jira-таски, outreach, гайды инсталляции, follow-up клиентов</div>
+        <div class="owner-focus">Web CM ТЗ + получение фидбэка по прототипу (13-19), Battle Cards для рассылок (до 09.05), Newsletter обновления (11-12), Tutorial Playable (9-12), Playable Analytics 15 фоллоуапов (9-12), синхронизация команд</div>
       </div>
     </div>
+  </section>
+
+  <!-- CM 2.0 / ENTERPRISE (номинальная фоновая работа) -->
+  <section class="panel" style="margin-top: 24px; opacity: 0.85;">
+    <h3 style="font-size: 16px; margin-bottom: 10px; color: var(--violet-light);">CM 2.0 / Enterprise · фоновая работа</h3>
+    <ul style="list-style: none; padding: 0; margin: 0; font-size: 13px; color: var(--muted); line-height: 1.7;">
+      <li>· CM 2.0 разработка ongoing - ведёт Вова. Саша Басюк сосредоточен на Web CM и Asset Studio, возврат к CM 2.0 после стабилизации.</li>
+      <li>· Релиз CM 2.0 - дата TBD (~20-26 мая, не зафиксирована, уточнить у Саши).</li>
+      <li>· CM-1570 Обзорное видео CM 2.0 (enterprise-позиционирование) - Вова, ~20-26 мая.</li>
+      <li>· Advisor Сергей (Plarium) - связи + макеты top-of-funnel.</li>
+      <li>· Webinar Playable Ads (идея) - Боря, ~20-26 мая.</li>
+    </ul>
   </section>
 
   </div><!-- /view-map -->
@@ -429,22 +473,22 @@
       <div class="gantt-head">
         <div class="gantt-head-label">Задача / ответственный</div>
         <div class="gantt-weeks">
-          <div class="gantt-week"><div class="gantt-week-range">22-28 Apr</div><div class="gantt-week-label">Week 1</div></div>
-          <div class="gantt-week"><div class="gantt-week-range">29 Apr - 5 May</div><div class="gantt-week-label">Week 2</div></div>
-          <div class="gantt-week"><div class="gantt-week-range">6-12 May</div><div class="gantt-week-label">Week 3</div></div>
-          <div class="gantt-week"><div class="gantt-week-range">13-19 May</div><div class="gantt-week-label">Week 4</div></div>
-          <div class="gantt-week"><div class="gantt-week-range">20-22 May</div><div class="gantt-week-label">W5</div></div>
+          <div class="gantt-week"><div class="gantt-week-range">29 Apr - 5 May</div><div class="gantt-week-label">Week 1 · прошла</div></div>
+          <div class="gantt-week"><div class="gantt-week-range">6-12 May</div><div class="gantt-week-label">Week 2 · текущая</div></div>
+          <div class="gantt-week"><div class="gantt-week-range">13-19 May</div><div class="gantt-week-label">Week 3</div></div>
+          <div class="gantt-week"><div class="gantt-week-range">20-26 May</div><div class="gantt-week-label">Week 4</div></div>
+          <div class="gantt-week"><div class="gantt-week-range">27 May - 2 Jun</div><div class="gantt-week-label">W5</div></div>
         </div>
       </div>
 
-      <!-- RELEASE -->
+      <!-- ACTIVATION IMPROVEMENTS -->
       <div class="gantt-category release has-today">
-        <div class="cat-name">Большой релиз</div>
-        <div class="cat-marker"><span class="gantt-today-label">Сегодня · 28 Apr</span></div>
+        <div class="cat-name">Activation Improvements (воронка)</div>
+        <div class="cat-marker"><span class="gantt-today-label">Сегодня · 06 May</span></div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Unreal 5.5 + 5.7 · merge в stage</strong><span class="who">Вова</span></div>
+        <div class="gantt-task"><strong>CM-1573 · [Воронка] Ревью процесса установки и первого запуска на Windows + диаграмма зависимостей</strong><span class="who">Леонид</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -452,13 +496,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar release" style="left: 0%; width: 3.33%;">22</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar release" style="left: 20%; width: 26.67%;">05-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>V2 Playable Editor · доработка рендеринга</strong><span class="who">Вал</span></div>
+        <div class="gantt-task"><strong>CM-1585 · Подпись Windows (.exe + python)</strong><span class="who">Леонид</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -466,13 +510,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar release" style="left: 3.33%; width: 16.67%;">23-27 Apr</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar release" style="left: 23.33%; width: 13.33%;">06-09 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Asset Studio · полишинг UX</strong><span class="who">Саша</span></div>
+        <div class="gantt-task"><strong>CM-1593 · Создать installer/uninstaller (Windows)</strong><span class="who">Вова</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -480,13 +524,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar release" style="left: 6.67%; width: 16.67%;">24-28 Apr</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar release" style="left: 20%; width: 26.67%;">05-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Release Notes</strong><span class="who">Саша</span></div>
+        <div class="gantt-task"><strong>CM-1595 · Создать Mac installer/uninstaller</strong><span class="who">Леонид</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -494,13 +538,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar release" style="left: 10%; width: 6.67%;">вых</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar release" style="left: 46.67%; width: 23.33%;">13-19 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Полишинг + QA перед релизом</strong><span class="who">Леонид + команда</span></div>
+        <div class="gantt-task"><strong>CM-1572 · [Воронка] Аудит событий между App Boot и First Project + промежуточные события</strong><span class="who">Вал</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -508,13 +552,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar release" style="left: 16.67%; width: 10%;">27-28 Apr</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar release" style="left: 26.67%; width: 10%;">07-09 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Большой релиз (Unreal + V2 + AS)</strong><span class="who">milestone</span></div>
+        <div class="gantt-task"><strong>CM-1582 · [Аналитика] AI-сгенерированный глоссарий аналитических событий из codebase</strong><span class="who">Вал</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -522,14 +566,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-milestone" style="left: 23.33%;"></div>
-          <div class="gantt-milestone-label" style="left: 23.33%;">29 Apr</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar release" style="left: 26.67%; width: 10%;">07-09 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>1-й патч · Native Asset Studio в Editor</strong><span class="who">Вал</span></div>
+        <div class="gantt-task"><strong>Контрольный замер App Boot → Login</strong><span class="who">milestone</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -537,8 +580,246 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar release" style="left: 26.67%; width: 20%;">30 Apr - 6 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-milestone" style="left: 43.33%;"></div>
+          <div class="gantt-milestone-label" style="left: 43.33%;">12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <!-- CHURN REDUCTION -->
+      <div class="gantt-category customer">Churn Reduction</div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>CM-1540 · [Churn] [Email] Churn Prevention — Day 1: Сбор причины отмены</strong><span class="who">Коля</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 3.33%; width: 33.34%;">30 Apr - 09 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>CM-1541 · [Churn] [Email] Churn Prevention — Day 5: Персонализированный оффер</strong><span class="who">Коля</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 3.33%; width: 33.34%;">30 Apr - 09 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>CM-1542 · [Churn] [Email] Churn Prevention — Day 14: Финальное письмо (urgency)</strong><span class="who">Коля</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 3.33%; width: 33.34%;">30 Apr - 09 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>CM-1579 · [Churn Day 5] Заменить хардкод промокода RETURN40 на персональные коды через InvitationCodeService</strong><span class="who">Коля</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 23.33%; width: 23.34%;">06-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>CM-1563 · [Churn] Передача событий из формы Tally в backend (опционально)</strong><span class="who">Коля</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar idea" style="left: 40%; width: 6.67%;">11-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+
+      <!-- CUSTOMERS / FEEDBACK PROGRAM / RASSYLKI -->
+      <div class="gantt-category customer">Клиенты, фидбэк-программа, рассылки</div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Реактивационная рассылка (8 churned)</strong><span class="who">Коля + Антон</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 40%; width: 6.67%;">11-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Ручная рассылка trial-юзерам (330)</strong><span class="who">Коля + Антон</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 33.33%; width: 13.34%;">09-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Special offer для Power Users (11 чел)</strong><span class="who">Антон</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 33.33%; width: 13.34%;">09-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Playable Analytics · 15 фоллоуапов по участникам feedback программы</strong><span class="who">Антон</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar customer" style="left: 33.33%; width: 13.34%;">09-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <!-- WEB CM -->
+      <div class="gantt-category release">Web CM</div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Web CM · LLM cost test</strong><span class="who">Саша Басюк</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar release" style="left: 23.33%; width: 23.34%;">06-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Web CM · HTML protection research</strong><span class="who">Саша Басюк</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar release" style="left: 23.33%; width: 23.34%;">06-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Web CM · Analytics traces (аналитика запросов юзеров)</strong><span class="who">Саша Басюк</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar release" style="left: 23.33%; width: 23.34%;">06-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>CM-1596 · [Playable Studio] Simple / Advanced playable paths (развилка при создании проекта)</strong><span class="who">Вова</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar release" style="left: 33.33%; width: 36.67%;">09-19 May (прототип → релиз)</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Получение фидбэка по прототипу Web CM</strong><span class="who">Антон</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar release" style="left: 46.67%; width: 23.33%;">13-19 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <!-- ANALYTICS & INFRA -->
+      <div class="gantt-category content">Аналитика и инфраструктура</div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>PostHog setup (бэкэнд forwarding)</strong><span class="who">Вал</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar content" style="left: 30%; width: 16.67%;">08-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Intercom integration · research → install</strong><span class="who">Саша Басюк</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar content" style="left: 23.33%; width: 46.67%;">06-19 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
@@ -546,7 +827,7 @@
       <div class="gantt-category content">Контент и маркетинг</div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Короткие видео Unreal (5-6 роликов)</strong><span class="who">Вова + монтаж Бори</span></div>
+        <div class="gantt-task"><strong>Демо Playable Editor + туториал для обзорщицы</strong><span class="who">Антон + Вал</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -554,13 +835,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar content" style="left: 6.67%; width: 33.33%;">24 Apr - 4 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 23.33%; width: 6.67%;">06-07 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Видео Asset Studio</strong><span class="who">Саша</span></div>
+        <div class="gantt-task"><strong>CM-1567 · Короткие demo Unreal (5-6 шт)</strong><span class="who">Вова</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -568,13 +849,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar content" style="left: 10%; width: 13.33%;">25-28 Apr</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 23.33%; width: 23.34%;">06-12 May (первые 3 → 07.05)</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Посты в блог · ньюслеттер · реклама</strong><span class="who">Боря</span></div>
+        <div class="gantt-task"><strong>Tutorial - ключевые шаги Playable</strong><span class="who">Антон</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -582,27 +863,28 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar content" style="left: 20%; width: 26.67%;">28 Apr - 6 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 33.33%; width: 13.34%;">09-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Apollo sequence обновить с V2 hook</strong><span class="who">Антон + Джордже</span></div>
+        <div class="gantt-task"><strong>Реактивационная рассылка (контент)</strong><span class="who">Антон + Боря</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 40%; width: 6.67%;"></div>
             <div class="gantt-grid-line" style="left: 23.33%"></div>
             <div class="gantt-grid-line" style="left: 46.67%"></div>
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar content" style="left: 23.33%; width: 23.33%;">29 Apr - 6 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 40%; width: 6.67%;">11-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Большое видео CM 2.0</strong><span class="who">команда + Боря</span></div>
+        <div class="gantt-task"><strong>Newsletter по обновлению приложения</strong><span class="who">Антон</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -610,30 +892,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar content" style="left: 40%; width: 20%;">4-10 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
-        </div>
-      </div>
-
-      <!-- CUSTOMERS / CRM -->
-      <div class="gantt-category customer">Клиенты и CRM</div>
-
-      <div class="gantt-row">
-        <div class="gantt-task"><strong>Триггерные рассылки trial → 1-й проект</strong><span class="who">Коля</span></div>
-        <div class="gantt-timeline">
-          <div class="gantt-grid">
-            <div class="gantt-grid-line" style="left: 23.33%"></div>
-            <div class="gantt-grid-line" style="left: 46.67%"></div>
-            <div class="gantt-grid-line" style="left: 70%"></div>
-            <div class="gantt-grid-line" style="left: 93.33%"></div>
-          </div>
-          <div class="gantt-bar customer" style="left: 3.33%; width: 16.67%;">23-28 Apr</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 40%; width: 6.67%;">11-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Exit Survey · форма + события</strong><span class="who">Боря + Коля</span></div>
+        <div class="gantt-task"><strong>LinkedIn Ads · кампания на Demo</strong><span class="who">Боря</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -641,13 +906,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar customer" style="left: 6.67%; width: 26.67%;">24 Apr - 2 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 16.67%; width: 30%;">04-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Гайды инсталляции macOS / Windows</strong><span class="who">Антон</span></div>
+        <div class="gantt-task"><strong>Google Ads · минимальный трафик</strong><span class="who">Боря</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -655,13 +920,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar customer" style="left: 3.33%; width: 6.67%;">23-24 Apr</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 16.67%; width: 30%;">04-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Win-back Zorka / Maya + отвалившиеся</strong><span class="who">Боря + Антон</span></div>
+        <div class="gantt-task"><strong>Vendo рассылка (новая база, USP под обновление)</strong><span class="who">Боря + Vendo</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -669,13 +934,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar customer" style="left: 26.67%; width: 33.33%;">30 Apr - 10 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 23.33%; width: 23.34%;">06-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Follow-up активных Creator plan</strong><span class="who">Антон</span></div>
+        <div class="gantt-task"><strong>Новый формат отчёта для Demo · финализация</strong><span class="who">Боря + Антон</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -683,8 +948,64 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar customer" style="left: 26.67%; width: 50%;">30 Apr - 15 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar content" style="left: 0%; width: 46.67%;">29 Apr - 12 May (фидбек во вт)</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Анонсы обновлений: посевы TG / LinkedIn / Reddit</strong><span class="who">Боря</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar content" style="left: 20%; width: 26.67%;">05-12 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Подготовка лендинга с акцентом на Demo</strong><span class="who">Боря</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar content" style="left: 20%; width: 50%;">05-19 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>CM-1570 · Обзорное видео CM 2.0 (enterprise)</strong><span class="who">Вова</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar content" style="left: 70%; width: 23.33%;">20-26 May</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
+        </div>
+      </div>
+
+      <div class="gantt-row">
+        <div class="gantt-task"><strong>Simulation use-case based videos</strong><span class="who">Антон</span></div>
+        <div class="gantt-timeline">
+          <div class="gantt-grid">
+            <div class="gantt-grid-line" style="left: 23.33%"></div>
+            <div class="gantt-grid-line" style="left: 46.67%"></div>
+            <div class="gantt-grid-line" style="left: 70%"></div>
+            <div class="gantt-grid-line" style="left: 93.33%"></div>
+          </div>
+          <div class="gantt-bar idea" style="left: 70%; width: 30%;">конец мая (бэклог)</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
@@ -692,7 +1013,7 @@
       <div class="gantt-category enterprise">CM 2.0 / Enterprise</div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>CM 2.0: подключение Леонида + разбор задач к MVP</strong><span class="who">Саша + Леонид</span></div>
+        <div class="gantt-task"><strong>CM 2.0: разработка продолжается</strong><span class="who">Вова (Саша на Web Mode)</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -700,13 +1021,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar enterprise" style="left: 16.67%; width: 20%;">27 Apr - 3 May</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar enterprise" style="left: 23.33%; width: 76.67%;">ongoing · возврат Саши после стабилизации</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>CM 2.0: разработка продолжается (Вова возвращается)</strong><span class="who">Вова + Саша</span></div>
+        <div class="gantt-task"><strong>Релиз CM 2.0 · дата TBD</strong><span class="who">уточнить у Саши / Алекса</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -714,13 +1035,13 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar enterprise" style="left: 23.33%; width: 76.67%;">После Unreal-релиза · ongoing</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar idea" style="left: 70%; width: 23.33%;">? · дата не зафиксирована</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-row">
-        <div class="gantt-task"><strong>Kanban / DevFlow Board · старт</strong><span class="who">последний приоритет · после Unreal</span></div>
+        <div class="gantt-task"><strong>Webinar Playable Ads · идея</strong><span class="who">Боря</span></div>
         <div class="gantt-timeline">
           <div class="gantt-grid">
             <div class="gantt-grid-line" style="left: 23.33%"></div>
@@ -728,81 +1049,25 @@
             <div class="gantt-grid-line" style="left: 70%"></div>
             <div class="gantt-grid-line" style="left: 93.33%"></div>
           </div>
-          <div class="gantt-bar idea" style="left: 23.33%; width: 30%;">после релиза</div>
-          <div class="gantt-today" style="left: 20%;"></div>
-        </div>
-      </div>
-
-      <div class="gantt-row">
-        <div class="gantt-task"><strong>Релиз CM 2.0 · дата TBD</strong><span class="who">уточнить у Саши / Алекса - не обсуждалось</span></div>
-        <div class="gantt-timeline">
-          <div class="gantt-grid">
-            <div class="gantt-grid-line" style="left: 23.33%"></div>
-            <div class="gantt-grid-line" style="left: 46.67%"></div>
-            <div class="gantt-grid-line" style="left: 70%"></div>
-            <div class="gantt-grid-line" style="left: 93.33%"></div>
-          </div>
-          <div class="gantt-bar idea" style="left: 0%; width: 100%;">? · дата не зафиксирована на встрече</div>
-          <div class="gantt-today" style="left: 20%;"></div>
-        </div>
-      </div>
-
-      <div class="gantt-row">
-        <div class="gantt-task"><strong>Enterprise outreach · MoonActive / MyGames</strong><span class="who">Алекс + Антон · вне встречи</span></div>
-        <div class="gantt-timeline">
-          <div class="gantt-grid">
-            <div class="gantt-grid-line" style="left: 23.33%"></div>
-            <div class="gantt-grid-line" style="left: 46.67%"></div>
-            <div class="gantt-grid-line" style="left: 70%"></div>
-            <div class="gantt-grid-line" style="left: 93.33%"></div>
-          </div>
-          <div class="gantt-bar enterprise" style="left: 43.33%; width: 56.67%;">5-22 May (план)</div>
-          <div class="gantt-today" style="left: 20%;"></div>
-        </div>
-      </div>
-
-      <div class="gantt-row">
-        <div class="gantt-task"><strong>Webinar Playable Ads · идея</strong><span class="who">Боря · формат обсудить</span></div>
-        <div class="gantt-timeline">
-          <div class="gantt-grid">
-            <div class="gantt-grid-line" style="left: 23.33%"></div>
-            <div class="gantt-grid-line" style="left: 46.67%"></div>
-            <div class="gantt-grid-line" style="left: 70%"></div>
-            <div class="gantt-grid-line" style="left: 93.33%"></div>
-          </div>
-          <div class="gantt-bar idea" style="left: 73.33%; width: 13.33%;">14-18 May?</div>
-          <div class="gantt-today" style="left: 20%;"></div>
-        </div>
-      </div>
-
-      <div class="gantt-row">
-        <div class="gantt-task"><strong>Webinar CM 2.0 · идея</strong><span class="who">Алекс + Саша</span></div>
-        <div class="gantt-timeline">
-          <div class="gantt-grid">
-            <div class="gantt-grid-line" style="left: 23.33%"></div>
-            <div class="gantt-grid-line" style="left: 46.67%"></div>
-            <div class="gantt-grid-line" style="left: 70%"></div>
-            <div class="gantt-grid-line" style="left: 93.33%"></div>
-          </div>
-          <div class="gantt-bar idea" style="left: 90%; width: 10%;">20-22?</div>
-          <div class="gantt-today" style="left: 20%;"></div>
+          <div class="gantt-bar idea" style="left: 70%; width: 23.33%;">~20-26 May?</div>
+          <div class="gantt-today" style="left: 23.33%;"></div>
         </div>
       </div>
 
       <div class="gantt-legend">
-        <div class="gantt-legend-item"><span class="legend-swatch release"></span>Релиз (critical path)</div>
-        <div class="gantt-legend-item"><span class="legend-swatch content"></span>Контент и маркетинг</div>
-        <div class="gantt-legend-item"><span class="legend-swatch customer"></span>Клиенты и CRM</div>
+        <div class="gantt-legend-item"><span class="legend-swatch release"></span>Activation / Web CM (critical path)</div>
+        <div class="gantt-legend-item"><span class="legend-swatch content"></span>Контент / маркетинг / аналитика</div>
+        <div class="gantt-legend-item"><span class="legend-swatch customer"></span>Клиенты, churn, рассылки, питчи</div>
         <div class="gantt-legend-item"><span class="legend-swatch enterprise"></span>CM 2.0 / Enterprise</div>
-        <div class="gantt-legend-item"><span class="legend-swatch idea"></span>Идея, дата обсуждается</div>
+        <div class="gantt-legend-item"><span class="legend-swatch idea"></span>Идея / бэклог</div>
         <div class="gantt-legend-item"><span class="legend-swatch milestone"></span>Milestone</div>
-        <div class="gantt-legend-item"><span style="width: 3px; height: 12px; background: var(--red); display: inline-block;"></span>Сегодня (28 Apr)</div>
+        <div class="gantt-legend-item"><span style="width: 3px; height: 12px; background: var(--red); display: inline-block;"></span>Сегодня (06 May)</div>
       </div>
     </div>
   </div><!-- /view-gantt -->
 
   <footer>
-    Источник: weekly sync 22.04.2026 · Детали в <code>weekly sync/2026-04-22-weekly-sync-analysis.md</code> · План обновляется по итогам следующего weekly
+    Источник: weekly sync 06.05.2026 · Детали в <code>Сlaude_Code_Maestro/Automation Actions/2026-05-06-cm-weekly-sprint-tasks/</code> · План обновляется по итогам следующего weekly
   </footer>
 
 </div>
